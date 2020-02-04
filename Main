@@ -1,0 +1,28 @@
+         boma.healthpoint = 5;
+        boma.foundgem();
+        boma.IsDead();public class Main {
+            public static void main(String[] args) {
+                Player icha = new Player();
+                icha.name = "n11 c4";
+                icha.speed = 321;
+                icha.healthpoint = 5;
+                icha.IsDead();
+
+                icha.run();
+                icha.IsDead();
+                icha.healthpoint = 0;
+                icha.IsDead();
+
+                Player boma = new Player();
+                boma.name = "helowdeadly";
+                boma.speed = 321;
+
+
+            }
+
+}
+//1. class_object
+//2. method
+//3. member
+//4. access modifier (public, private(cuma di akses di class),protected(di package yg sama) ,default)
+//5. encapsulation
