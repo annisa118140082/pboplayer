@@ -1,0 +1,42 @@
+public class Player {
+    String name;
+    int healthpoint;
+    int speed;
+    String lastname;
+    public void run(){
+        System.out.println(this.name+" terus berlari...");
+    }
+    public void IsDead() {
+        if (this.healthpoint <= 0) {
+            System.out.println(this.name+" is dead!!");
+        } else {
+            System.out.println(this.name+" masih berlari...");
+        }
+    }
+
+    public void foundgem(){
+        this.healthpoint = healthpoint+5;
+        System.out.println("great! you found gems. now healthpoint = "+this.healthpoint);
+    }
+    public void checkhp(){
+        System.out.println(this.healthpoint);
+    }
+
+    public Player (String name){
+        this.name=name;
+    }
+    String getName(){ //method
+        return this.name;
+    }
+    void setName(String name){
+        this.name=name;
+    }
+    void setName(String name, String lastname){ //overloading
+        this.name=name;
+        this.lastname=lastname;
+    }
+    public Player(){
+
+    }
+
+}
